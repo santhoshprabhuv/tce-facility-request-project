@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonDrawerToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:contentDescription="@string/menu"
+            app:tint="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tce_facility_request"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@id/buttonDrawerToggle"
+            app:layout_constraintTop_toTopOf="parent" />
+    </Toolbar>
+
+    <Button
+        android:id="@+id/transport_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        android:text="@string/transport_request"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/auditorium_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        android:text="@string/auditorium_request"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/transport_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/guest_house_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        android:text="@string/guest_house_request"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/auditorium_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
